@@ -8,11 +8,11 @@ int main()
     int b;
     char s;
     cout << "Input a:";
-        cin >> a;
+    cin >> a;
     cout << "Input b:";
-        cin >> b;
+    cin >> b;
     cout << "Input sign:";
-        cin >> s;
+    cin >> s;
     if (s == '+') {
         cout << "a + b =" << a + b;
     }else if (s == '-'){
