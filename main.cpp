@@ -9,8 +9,16 @@ int main()
     char s;
     cout << "Input a:";
     cin >> a;
+    if (cin.fail()){
+        cout << "The value of 'a' must be a valid number!";
+        return -2;
+    }
     cout << "Input b:";
     cin >> b;
+    if (cin.fail()){
+        cout << "The value of 'b' must be a valid number!";
+        return -3;
+    }
     cout << "Input sign:";
     cin >> s;
     if (s == '+') {
@@ -25,7 +33,7 @@ int main()
             cout << "Devide by Zero is denied!";
             return -1;
         }
-        cout << "a / b =" << a / b;
+        cout << "a / b =" << a / double(b);
     }else{
         cout << "Invalid Sign! Avaliable signs: +, -, *, /";
     }
